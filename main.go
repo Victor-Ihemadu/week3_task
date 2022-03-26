@@ -28,6 +28,7 @@ func main() {
 	fmt.Println(s6.AdmitStudent(12))
 	fmt.Println(s7.AdmitStudent(12))
 	fmt.Println(s8.AdmitStudent(12))
+
 	fmt.Println(s1.ExpelStudent([]int{75, 69, 89, 90}))
 	fmt.Println(s2.ExpelStudent([]int{60, 68, 92, 98}))
 	fmt.Println(s3.ExpelStudent([]int{65, 86, 89, 87}))

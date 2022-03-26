@@ -8,7 +8,7 @@ func TestTeacher_ValidateAttendance(t *testing.T) {
 		inputFunction int
 		output        string
 	}{
-		{Teacher{"Lawrence", []string{"Mathematics", "PHE", "Government"}, 69}, 65, "Lawrence fully attended classes"},
+		{Teacher{"Lawrence", []string{"Mathematics", "PHE", "Government"}, 60}, 65, "Lawrence fully attended classes"},
 		{Teacher{"Prince", []string{"Physics", "Agriculture", "Social Studies"}, 80}, 65, "Prince fully attended classes"},
 		{Teacher{"Oscar", []string{"Mathematics", "Technical Drawing", "Government"}, 50}, 65, "Oscar didn't fully attend classes"},
 		{Teacher{"Johnson", []string{"English", "PHE", "Economics"}, 95}, 65, "Johnson fully attended classes"},
@@ -31,7 +31,7 @@ func TestTeacher_GradeStudent(t *testing.T) {
 		funcInput      string
 		expectedOutput string
 	}{
-		{Teacher{"Harry", []string{"Agriculture", "PHE", "Music"}, 71}, "Agriculture", "Harry is graded"},
+		{Teacher{"Harry", []string{"Agriculture", "PHE", "Music"}, 71}, "Chemistry", "Harry is graded"},
 		{Teacher{"Michael", []string{"Civic Education", "PHE", "Mathematics"}, 63}, "Chemistry", "Michael has no grade assigned"},
 		{Teacher{"Charles", []string{"Music", "PHE", "Government"}, 45}, "Mathematics", "Charles has no grade assigned"},
 		{Teacher{"Johnson", []string{"English", "PHE", "Economics"}, 95}, "Economics", "Johnson is graded"},
